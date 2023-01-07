@@ -1,12 +1,14 @@
 import React from 'react';
+import "./style.scss"
+
 
 const index = () => {
     return (
-        <div>
+        <section className='interview'>
             <h2>
                 Interview
             </h2>
-        </div>
+        </section>
     );
 };
 
