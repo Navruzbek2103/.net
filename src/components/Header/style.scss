@@ -1,0 +1,44 @@
+.header{
+  box-shadow: 0 0 6px 0px rgb(186, 186, 186);
+}
+
+.nav{
+  display: flex;
+  align-items: center;
+  padding: 7px 0;
+
+  &__link{
+    margin-right: 15px;
+
+    &-img{
+      border-radius: 10px;
+    }
+  }
+
+  &__list{
+    margin-right: auto;
+    display: flex;
+    gap: 30px;
+  }
+
+  &__item{
+
+    &-link{
+      color: #000;
+      opacity: .7;
+
+      &:hover{
+        color: #000;
+        opacity: 1;
+      }
+    }
+  }
+}
+.btnGroup{
+  display: flex;
+  gap: 20px;
+}
+
+.modal-body-title{
+  margin-bottom: 30px;
+}
