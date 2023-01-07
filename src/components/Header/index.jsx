@@ -1,5 +1,6 @@
 import React from 'react';
 import "./style.scss";
+import {NavLink} from "react-router-dom"
 
 
 const index = () => {
@@ -55,16 +56,16 @@ const index = () => {
                </a>
                <ul className="nav__list">
                   <li className="nav__item">
-                     <a href="" className="nav__item-link">Explore</a>
+                     <NavLink to="/" className="nav__item-link">Explore</NavLink>
                   </li>
                   <li className="nav__item">
-                     <a href="" className="nav__item-link">Documentation</a>
+                     <NavLink to="/doc" className="nav__item-link">Documentation</NavLink>
                   </li>
                   <li className="nav__item">
-                     <a href="" className="nav__item-link">Interview</a>
+                     <NavLink to="/int" className="nav__item-link">Interview</NavLink>
                   </li>
                   <li className="nav__item">
-                     <a href="" className="nav__item-link">Test</a>
+                     <NavLink to="/test" className="nav__item-link">Test</NavLink>
                   </li>
                </ul>
                <div className="btnGroup">
