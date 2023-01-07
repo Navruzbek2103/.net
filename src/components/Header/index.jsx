@@ -47,6 +47,7 @@ const index = () => {
                         <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                         <button type="button" className="btn btn-primary">Understood</button>
                      </div>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti magni ut non iure autem deleniti reprehenderit unde similique rerum, fuga porro temporibus, incidunt, aliquid accusamus corporis sint voluptas deserunt in odio delectus quos! Iste, in sunt. Aliquid assumenda atque aut quisquam repudiandae placeat tempore cumque perspiciatis sint, dolore animi iusto nostrum sunt quod doloribus reprehenderit iste eum maxime, magni officiis, voluptates modi optio! Nesciunt suscipit, consequuntur quae blanditiis ducimus necessitatibus sunt ipsa reprehenderit labore maiores assumenda, dolore dolorum quam doloremque corporis sit odio? Doloribus maiores, impedit voluptatem animi eaque dignissimos necessitatibus tempore ducimus, ab totam aliquid sint, blanditiis consectetur at.</p>
                   </div>
                </div>
             </div>
