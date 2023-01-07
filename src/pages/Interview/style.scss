@@ -1,0 +1,31 @@
+.interview{
+
+  &__category-list{
+    display: flex;
+    gap: 20px;
+  }
+
+  &__category-item{
+
+    &-link{
+      // border: 1px solid red;
+      padding: 10px 20px;
+      background-color: #F2F3F4;
+      border-radius: 25px;
+      color: black;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      &:hover{
+        background-color: #E5E6E8;
+        color: black;
+      }
+    }
+
+    &-span{
+      color: #AF52DE;
+      font-weight: 600;
+    }
+  }
+}
