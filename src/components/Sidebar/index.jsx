@@ -1,5 +1,6 @@
 import React from "react";
-import { BsPeopleFill } from "react-icons/bs";
+// import { BsPeopleFill } from "react-icons/bs";
+import Logo from "./../../assets/images/site-logo.jpg"
 import { IoLogoGameControllerB } from "react-icons/io";
 import "./style.scss";
 import Accord from "./../../UI/Accordion/index";
@@ -7,7 +8,7 @@ import Accord from "./../../UI/Accordion/index";
 const index = () => {
   return (
     <>
-      <div className="sidebar card d-flex justify-between py-4 flex-column align-items-center">
+      <div className="sidebar card d-flex justify-between py-4 flex-column ">
         <div className="side_bar">
           <div className="sidebar-top w-100">
             <a
@@ -15,8 +16,9 @@ const index = () => {
             align-items-center"
               href="./"
             >
-              <BsPeopleFill className="img" />
-              <h1 className="logo">.Net Uzbekistan</h1>
+              {/* <BsPeopleFill className="img" /> */}
+              <img src={Logo} alt="site logo" className="img" />
+              <h1 className="logo">.NetDev</h1>
             </a>
           </div>
           <div className="sidebar__input my-3 w-100">

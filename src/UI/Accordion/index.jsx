@@ -56,12 +56,10 @@ export default function CustomizedAccordions() {
         onChange={handleChange("panel1")}
       >
         <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-          <Typography>Javascript darslari</Typography>
+          <Typography variant="h6">Javascript darslari</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
-            Kirish ! 
-          </Typography>
+          <Typography>Kirish !</Typography>
         </AccordionDetails>
       </Accordion>
       <Accordion
@@ -69,12 +67,10 @@ export default function CustomizedAccordions() {
         onChange={handleChange("panel2")}
       >
         <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
-          <Typography>Database</Typography>
+          <Typography variant="h6">Database</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
-            Kirish !
-          </Typography>
+          <Typography>Kirish !</Typography>
         </AccordionDetails>
       </Accordion>
       <Accordion
@@ -82,12 +78,10 @@ export default function CustomizedAccordions() {
         onChange={handleChange("panel3")}
       >
         <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
-          <Typography>Java .net darslari</Typography>
+          <Typography variant="h6">Java .net darslari</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
-            Lorem ipsum dolor sit amet
-          </Typography>
+          <Typography>Lorem ipsum dolor sit amet</Typography>
         </AccordionDetails>
       </Accordion>
       <Accordion
@@ -95,12 +89,10 @@ export default function CustomizedAccordions() {
         onChange={handleChange("panel4")}
       >
         <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
-          <Typography>Loyihalar</Typography>
+          <Typography variant="h6">Loyihalar</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
-            Lorem ipsum dolor sit amet
-          </Typography>
+          <Typography>Lorem ipsum dolor sit amet</Typography>
         </AccordionDetails>
       </Accordion>
       <Accordion
@@ -108,12 +100,10 @@ export default function CustomizedAccordions() {
         onChange={handleChange("panel5")}
       >
         <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
-          <Typography>Fikr va mulohazalar</Typography>
+          <Typography variant="h6">Fikr va mulohazalar</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
-            Lorem ipsum dolor sit amet
-          </Typography>
+          <Typography>Lorem ipsum dolor sit amet</Typography>
         </AccordionDetails>
       </Accordion>
     </div>
