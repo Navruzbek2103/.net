@@ -1,0 +1,17 @@
+.interview{
+
+  &__item{
+    padding: 10px 0 10px 3px;
+
+
+
+    &:nth-child(even){
+      background-color: #F7F8FA;
+    }
+
+    &-link{
+      color: rgb(79, 78, 78);
+      font-size: 20px;
+    }
+  }
+}
