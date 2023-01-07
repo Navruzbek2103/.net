@@ -11,32 +11,35 @@ const index = () => {
   return (
     <>
       <div className="sidebar card d-flex py-4 flex-column align-items-center">
-        <div className="sidebar-top w-100">
-          <a
-            className="sidebar__link d-flex
-          align-items-center"
-            href="./"
-          >
-            <BsPeopleFill className="img" />
-            <h1 className="logo">.Net Uzbekistan</h1>
-          </a>
-        </div>
+        <div className="side_bar">
+          <div className="sidebar-top w-100">
+            <a
+              className="sidebar__link d-flex
+            align-items-center"
+              href="./"
+            >
+              <BsPeopleFill className="img" />
+              <h1 className="logo">.Net Uzbekistan</h1>
+            </a>
+          </div>
         <div className="sidebar__input my-3 w-100">
           <input type="search" className="form-control search-bar" />
         </div>
-        <div className="w-100 d-flex flex-column mt-4">
+        </div>
+
+        <div className="w-100 d-flex flex-column mt-4 accordion-menu">
           <Accordion>
             <AccordionSummary
               expandIcon={<ExpandMoreIcon />}
               aria-controls="panel1a-content"
               id="panel1a-header"
             >
-              <Typography variant="h6" margin="none">.Net Darslari</Typography>
+              <Typography variant="h6">
+                .Net Darslari
+              </Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography variant="subtitle2" >Lorem ipsum dolor sit amet,</Typography>
-              <Typography variant="subtitle2" >Lorem ipsum dolor sit amet,</Typography>
-              <Typography variant="subtitle2" >Lorem ipsum dolor sit amet,</Typography>
+              <Typography>Lorem ipsum dolor sit amet,</Typography>
             </AccordionDetails>
           </Accordion>
           <Accordion>
