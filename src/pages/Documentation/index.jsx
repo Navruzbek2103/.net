@@ -1,12 +1,19 @@
-import React from 'react';
-import "./stylee.scss"
+import React from "react";
+import Sidebar from "./../../components/Sidebar/index";
 
 const index = () => {
-    return (
-        <>
-        <h1>Documentation</h1>
-        </>
-    );
+  return (
+    <>
+      <div className="documentation">
+        <div className="container">
+          <div className="document">
+          <Sidebar />
+
+          </div>
+        </div>
+      </div>
+    </>
+  );
 };
 
 export default index;
