@@ -27,11 +27,12 @@ const index = () => {
         </div>
 
         <div className="w-100 d-flex flex-column mt-4 accordion-menu">
+          <h5 className="doc__title">.NetDev Uzbekistan</h5>
           <Accord />
         </div>
-        <div className="sidebar__bottom d-flex align-items-center ">
+        <div className="sidebar__bottom shadow d-flex align-items-center ">
           <IoLogoGameControllerB className="logo__bottom"/>
-          <h5>Powered by OneTeam</h5>
+          <h6>Powered by OneTeam</h6>
         </div>
       </div>
     </>

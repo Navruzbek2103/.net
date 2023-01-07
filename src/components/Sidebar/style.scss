@@ -7,7 +7,7 @@
   width: 300px;
   gap: 40px;
   justify-content: space-between;
-//   overflow-y: scroll;
+  overflow-y: scroll;
   border-left: 0;
 }
 .sidebar__link {
@@ -49,16 +49,36 @@
   width: 300px;
 }
 .sidebar__bottom {
+  padding: 15px 10px;
+  border-radius: 5px;
   margin: 0px 10px;
   margin-bottom: 50px;
   gap: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: #ECEFF1;
 }
 .logo__bottom {
   width: 40px;
   height: 40px;
-  margin-right: 10px;
+  margin-right: 5px;
   vertical-align: middle;
+}
+
+.doc__title{
+    margin: 10px 0px;
+    padding: 10px 10px;
+    font-size: 21px;
+    line-height: 22px;
+    font-weight: 500;
+    cursor:pointer;
+    transition: all .5s ease-in-out;
+    border-radius: 5px;
+    background: #eceff1;
+}
+.active{
+    padding: 10px 10px;
+    background: #ECEFF1;
+   border-radius: 5px;
 }

@@ -1,15 +1,27 @@
 import React from "react";
 import "./style.scss";
 import { NavLink } from "react-router-dom";
-import SiteLogo from "./../../assets/images/site-logo.jpg"
-
+import SiteLogo from "./../../assets/images/site-logo.jpg";
+// import React, { useState } from 'react';
+import { useState } from "react";
+import Button from "react-bootstrap/Button";
+import Form from "react-bootstrap/Form";
+import Modal from "react-bootstrap/Modal";
 
 const index = () => {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+  const [sign, setSign] = useState(false);
+
+  const handleSign = () => setSign(false);
+  const handleSignIn = () => setSign(true);
   return (
     <header className="header">
       <div className="container">
         {/* Modal registration */}
-        <div
+        {/* <div
           className="modal mt-5 fade"
           id="staticBackdropSignUp"
           data-bs-backdrop="static"
@@ -62,10 +74,10 @@ const index = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Modal sign in */}
-        <div
+        {/* <div
           className="modal mt-5 fade"
           id="staticBackdropSignIn"
           data-bs-backdrop="static"
@@ -98,7 +110,6 @@ const index = () => {
                   className="form-control mb-4 p-3"
                   placeholder="Password"
                 />
-                {/* <input type="email" className="form-control mb-4 p-3" placeholder='E-mail address'/> */}
               </div>
               <div className="modal-footer">
                 <button
@@ -114,7 +125,95 @@ const index = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
+        <Modal show={show} onHide={handleClose}>
+          <Modal.Header closeButton>
+            <Modal.Title>Modal registration</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <Form>
+              <Form.Group
+                className="mb-3"
+                controlId="exampleForm.ControlInput1"
+              >
+                <Form.Label>Username</Form.Label>
+                <Form.Control type="email" placeholder="@username" autoFocus />
+              </Form.Group>
+              <Form.Group
+                className="mb-3"
+                controlId="exampleForm.ControlTextarea1"
+              >
+                <Form.Label>Enter Password</Form.Label>
+                <Form.Control
+                  type="password"
+                  placeholder="Password"
+                  autoFocus
+                />
+              </Form.Group>
+              <Form.Group
+                className="mb-3"
+                controlId="exampleForm.ControlTextarea1"
+              >
+                <Form.Label>Email address</Form.Label>
+                <Form.Control
+                  type="email"
+                  placeholder="name@example.com"
+                  autoFocus
+                />
+              </Form.Group>
+              <Form.Group
+                className="mb-3"
+                controlId="exampleForm.ControlTextarea1"
+              ></Form.Group>
+            </Form>
+          </Modal.Body>
+          <Modal.Footer>
+            <Button variant="secondary" onClick={handleClose}>
+              Close
+            </Button>
+            <Button variant="primary" onClick={handleClose}>
+              Save Changes
+            </Button>
+          </Modal.Footer>
+        </Modal>
+
+        {/* sign in */}
+        <Modal show={sign} onHide={handleSign}>
+          <Modal.Header closeButton>
+            <Modal.Title>Modal Sign in</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <Form>
+              <Form.Group
+                className="mb-3"
+                controlId="exampleForm.ControlInput1"
+              >
+                <Form.Label>Username</Form.Label>
+                <Form.Control type="email" placeholder="@username" autoFocus />
+              </Form.Group>
+              <Form.Group
+                className="mb-3"
+                controlId="exampleForm.ControlTextarea1"
+              >
+                <Form.Label>Enter Password</Form.Label>
+                <Form.Control
+                  type="password"
+                  placeholder="Password"
+                  autoFocus
+                />
+              </Form.Group>
+            </Form>
+          </Modal.Body>
+          <Modal.Footer>
+            <Button variant="secondary" onClick={handleClose}>
+              Close
+            </Button>
+            <Button variant="primary" onClick={handleSign}>
+              Save Changes
+            </Button>
+          </Modal.Footer>
+        </Modal>
+
         <nav className="nav">
           <a href="./../../../index.html" className="nav__link">
             <img
@@ -147,20 +246,12 @@ const index = () => {
             </li>
           </ul>
           <div className="btnGroup">
-            <button
-              className="btn btn-light"
-              data-bs-toggle="modal"
-              data-bs-target="#staticBackdropSignUp"
-            >
+            <Button variant="secondary" onClick={handleShow}>
               Sign up
-            </button>
-            <button
-              className="btn btn-light"
-              data-bs-toggle="modal"
-              data-bs-target="#staticBackdropSignIn"
-            >
+            </Button>
+            <Button variant="primary" onClick={handleSignIn}>
               Sign in
-            </button>
+            </Button>
           </div>
         </nav>
       </div>

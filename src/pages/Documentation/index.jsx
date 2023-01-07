@@ -8,7 +8,9 @@ const index = () => {
         <div className="container">
           <div className="document">
           <Sidebar />
-
+          <div className="document__right">
+            
+          </div>
           </div>
         </div>
       </div>
