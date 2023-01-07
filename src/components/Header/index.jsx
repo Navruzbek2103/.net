@@ -55,7 +55,7 @@ const index = () => {
                   Close
                 </button>
                 <button type="button" className="btn btn-primary">
-                  Understood
+                  Save
                 </button>
               </div>
             </div>
@@ -107,7 +107,7 @@ const index = () => {
                   Close
                 </button>
                 <button type="button" className="btn btn-primary">
-                  Understood
+                  Save
                 </button>
               </div>
             </div>
