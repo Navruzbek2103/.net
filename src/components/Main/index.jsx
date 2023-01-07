@@ -1,14 +1,12 @@
 import React from 'react';
 import "./style.scss";
+import Intro from "./Intro"
 
 const index = () => {
    return (
-      <div>
-         <div className="container">
-            <h1>Main</h1>
-
-         </div>
-      </div>
+      <main className='main'>
+         <Intro />
+      </main>
    );
 };
 
