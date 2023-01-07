@@ -48,11 +48,11 @@ const index = () => {
           </li>
         </ul>
         <div className="interview__wrapper">
-          <h2 className="interview__title">Title</h2>
+          <h2 className="interview__title">Questions</h2>
           <ol className="interview__list" >
             {
-              nums.map((item) => {
-                return <Questions key={item} />
+              nums.map((item, i) => {
+                return <Questions key={item} data={item} />
               })
             }
           </ol>

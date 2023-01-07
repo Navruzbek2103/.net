@@ -1,6 +1,8 @@
 import React from "react";
 import "./style.scss";
 import { NavLink } from "react-router-dom";
+import SiteLogo from "./../../assets/images/site-logo.jpg"
+
 
 const index = () => {
   return (
@@ -116,7 +118,7 @@ const index = () => {
         <nav className="nav">
           <a href="./../../../index.html" className="nav__link">
             <img
-              src="https://via.placeholder.com/70x35"
+              src={SiteLogo}
               title="Site logo"
               alt="site logo"
               className="nav__link-img"
