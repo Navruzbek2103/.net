@@ -5,9 +5,17 @@ import { BsThreeDotsVertical } from "react-icons/bs";
 import { HiLink } from "react-icons/hi";
 import "./stylee.scss";
 import { useState } from "react";
+import { useParams, Outlet } from "react-router-dom";
 // import { Card } from "react-bootstrap";
 
 const index = () => {
+  const params = useParams();
+  const { id } = params;
+  const isInteger = /^-?[0-9]+$/.test(id + "");
+
+  // const display = ()=>{
+
+  // }
   const [none, setShow] = useState(false);
   const [copied, setCopied] = useState(false);
 
@@ -20,9 +28,6 @@ const index = () => {
     document.body.removeChild(el);
     setCopied(true);
   }
-  // const display = ()=>{
-
-  // }
   return (
     <>
       <div className="documentation">
@@ -84,8 +89,8 @@ const index = () => {
               </div>
               <div className="card shadow p-4 border-3 border-end border-5 border-end-0 border-top-0 border-bottom-0 border-info">
                 Bir bor ekan, bir yo'q ekan, bitta chala dasturchi bor ekan.
-                O'zicha juda kuchli emishda endi...:). Kunlarning birida u Java
-                va .NET (C#) ni solishtirish niyatida, ikkalasida ham bir xil
+                O'zicha juda kuchli emishda endi... Kunlarning birida u Java va
+                .NET (C#) ni solishtirish niyatida, ikkalasida ham bir xil
                 natija beruvchi kod yozmoqchi bo'libdi. Demak, bizning qahramon
                 birinchi bo'lib "IntelliJ IDEA" (Javada ishlash uchun eng zo'r
                 muhit desak bolaveradi) ni ishga tushiribdi. O'sha o'zi xohlagan
@@ -94,7 +99,7 @@ const index = () => {
                 navbat C# ga kelibdida... O'sha proyektni C# da boshlabdi...
                 Qarasa asabi o'ynayapti. Negaki kompyuter qotayotgan edi. Cho'ta
                 kompyuter rosa qiynalyapti, bechara CPU (protsessor) dan
-                chiqayotgan issiqlikka tuxum pishirsa bo'ladi...:) Natijada
+                chiqayotgan issiqlikka tuxum pishirsa bo'ladi... Natijada
                 bizning shef o'z kompyuterini jahl ustida bir urdi... Shunday
                 urdi keyboard (klaviatura) ga, shunday urdi.... bir nechta
                 klavishlar ishlame qoldi.

@@ -6,8 +6,8 @@
   border-radius: 0px !important;
   min-height: 100vh;
   width: 300px;
-  gap: 40px;
-  justify-content: space-between;
+  gap: 10px;
+  justify-content: flex-start;
   overflow-y: scroll;
   border-left: 0;
 }
@@ -38,10 +38,8 @@
 }
 .accordion-menu {
   position: relative;
-  padding-top: 50px;
   overflow-y: scroll;
-  margin-top: 150px !important;
-  height: 300px;
+  height: 400px;
   //   scroll-snap-type: y mandatory;
 }
 ::-webkit-scrollbar {
@@ -70,12 +68,7 @@
 }
 
 .doc__title {
-  position: fixed;
-  top: 200px;
-  left: 40px;
-  z-index: 55;
-  width: 300px;
-  margin: 10px 0px;
+  margin-top: 20px!important;
   padding: 10px 10px;
   font-size: 21px;
   line-height: 22px;
@@ -86,7 +79,6 @@
   background: #eceff1;
 }
 .active {
-  padding: 10px 10px;
   background: #eceff1;
   border-radius: 5px;
 }

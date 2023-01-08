@@ -5,7 +5,6 @@ import Doc from "./pages/Documentation";
 import Int from "./pages/Interview";
 import Test from "./pages/Test";
 import { Route, Routes } from "react-router-dom";
-// import Footer from "./components/Footer"
 
 const App = () => {
   return (
@@ -14,7 +13,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/doc" element={<Doc />} />
-        <Route path="/int" element={<Int />} />
+        <Route path="/int" element={<Int />} />=
         <Route path="/test" element={<Test />} />
       </Routes>
       {/* <Main /> */}

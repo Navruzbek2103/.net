@@ -126,7 +126,7 @@ const index = () => {
             </div>
           </div>
         </div> */}
-        <Modal show={show} onHide={handleClose}>
+        <Modal className="mt-4 pt-5" show={show} onHide={handleClose}>
           <Modal.Header closeButton>
             <Modal.Title>Modal registration</Modal.Title>
           </Modal.Header>
@@ -178,7 +178,7 @@ const index = () => {
         </Modal>
 
         {/* sign in */}
-        <Modal show={sign} onHide={handleSign}>
+        <Modal show={sign} className="mt-5 pt-5" onHide={handleSign}>
           <Modal.Header closeButton>
             <Modal.Title>Modal Sign in</Modal.Title>
           </Modal.Header>
@@ -225,22 +225,22 @@ const index = () => {
           </a>
           <ul className="nav__list">
             <li className="nav__item">
-              <NavLink to="/" className="nav__item-link">
+              <NavLink to="/" className="nav__item-link p-1">
                 Explore
               </NavLink>
             </li>
             <li className="nav__item">
-              <NavLink to="/doc" className="nav__item-link">
+              <NavLink to="/doc" className="nav__item-link p-2">
                 Documentation
               </NavLink>
             </li>
             <li className="nav__item">
-              <NavLink to="/int" className="nav__item-link">
+              <NavLink to="/int" className="nav__item-link p-2">
                 Interview
               </NavLink>
             </li>
             <li className="nav__item">
-              <NavLink to="/test" className="nav__item-link">
+              <NavLink to="/test" className="nav__item-link p-2">
                 Test
               </NavLink>
             </li>
