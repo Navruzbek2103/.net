@@ -5,6 +5,7 @@ import MuiAccordion from "@mui/material/Accordion";
 import MuiAccordionSummary from "@mui/material/AccordionSummary";
 import MuiAccordionDetails from "@mui/material/AccordionDetails";
 import Typography from "@mui/material/Typography";
+import { NavLink } from "react-router-dom";
 
 const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
@@ -56,10 +57,22 @@ export default function CustomizedAccordions() {
         onChange={handleChange("panel1")}
       >
         <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-          <Typography variant="h6">Javascript darslari</Typography>
+          <Typography variant="h6">C# .NET</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>Kirish !</Typography>
+          <Typography>.Netga hush kelibsiz</Typography>
+        </AccordionDetails>
+        <AccordionDetails>
+          <Typography>.Net bilan bog'liq Muaomo</Typography>
+        </AccordionDetails>
+        <AccordionDetails>
+          <Typography>.Net asoslari</Typography>
+        </AccordionDetails>
+        <AccordionDetails>
+          <Typography>Basics</Typography>
+        </AccordionDetails>
+        <AccordionDetails>
+          <Typography>LINQ asoslari</Typography>
         </AccordionDetails>
       </Accordion>
       <Accordion
@@ -70,7 +83,10 @@ export default function CustomizedAccordions() {
           <Typography variant="h6">Database</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>Kirish !</Typography>
+          <Typography>MS SQL server</Typography>
+        </AccordionDetails>
+        <AccordionDetails>
+          <Typography>PostgreSQL</Typography>
         </AccordionDetails>
       </Accordion>
       <Accordion
@@ -78,10 +94,16 @@ export default function CustomizedAccordions() {
         onChange={handleChange("panel3")}
       >
         <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
-          <Typography variant="h6">Java .net darslari</Typography>
+          <Typography variant="h6">JavaScript</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>Lorem ipsum dolor sit amet</Typography>
+          <Typography>JavaScript</Typography>
+        </AccordionDetails>
+        <AccordionDetails>
+          <Typography>React js</Typography>
+        </AccordionDetails>
+        <AccordionDetails>
+          <Typography>Vue js</Typography>
         </AccordionDetails>
       </Accordion>
       <Accordion
@@ -92,7 +114,10 @@ export default function CustomizedAccordions() {
           <Typography variant="h6">Loyihalar</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>Lorem ipsum dolor sit amet</Typography>
+          <Typography>Telegram bot</Typography>
+        </AccordionDetails>
+        <AccordionDetails>
+          <Typography>Crm Platform</Typography>
         </AccordionDetails>
       </Accordion>
       <Accordion
@@ -103,7 +128,7 @@ export default function CustomizedAccordions() {
           <Typography variant="h6">Fikr va mulohazalar</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>Lorem ipsum dolor sit amet</Typography>
+          <Typography>FAANGgacha bo'lgan yo'l</Typography>
         </AccordionDetails>
       </Accordion>
     </div>
