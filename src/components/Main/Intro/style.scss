@@ -1,17 +1,46 @@
 .intro{
   padding: 30px 0;
   // margin: 35px 20px;
-  padding-left: 80px;
   margin-top: 50px;
 
-  &__title{
-    font-size: 18px;
-    color: #AFAFAF;
-    margin-bottom: 10px;
+  &__wrapper{
+    &-title{
+      font-size: 18px;
+      color: #AFAFAF;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    &-subtitle{
+      font-size: 30px;
+      color: #585858;
+      margin-bottom: 40px;
+      text-align: center;
+
+    }
   }
 
-  &__subtitle{
-    font-size: 30px;
-    color: #585858;
+  &__inner{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+
+    &-img{
+      // max-width: ;
+      width: 100%;
+      border-radius: 20px;
+    }
+
+    &-box{
+
+
+      &-text{
+        font-family: "Harrington";
+        font-size: 22px;
+        text-align: center;
+      }
+    }
   }
+
 }

@@ -216,7 +216,7 @@ const index = () => {
         </Modal>
 
         <nav className="nav">
-          <Link to="/" className="nav__link">
+          <Link to="/explore" className="nav__link">
             <img
               src={SiteLogo}
               title="Site logo"
@@ -240,7 +240,7 @@ const index = () => {
                 Interview
               </NavLink>
             </li>
-            
+
           </ul>
           <div className="btnGroup">
             <Button variant="secondary" onClick={handleShow}>
