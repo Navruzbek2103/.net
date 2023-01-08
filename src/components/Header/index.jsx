@@ -1,12 +1,13 @@
 import React from "react";
 import "./style.scss";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import SiteLogo from "./../../assets/images/site-logo.jpg";
 // import React, { useState } from 'react';
 import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
+import Intro from "./../../components/Main/Intro"
 
 const index = () => {
   const [show, setShow] = useState(false);
@@ -215,14 +216,14 @@ const index = () => {
         </Modal>
 
         <nav className="nav">
-          <a href="./../../../index.html" className="nav__link">
+          <Link to="/" className="nav__link">
             <img
               src={SiteLogo}
               title="Site logo"
               alt="site logo"
               className="nav__link-img"
             />
-          </a>
+          </Link>
           <ul className="nav__list">
             <li className="nav__item">
               <NavLink to="/" className="nav__item-link p-1">
