@@ -8,7 +8,6 @@
   width: 300px;
   gap: 10px;
   justify-content: flex-start;
-  overflow-y: scroll;
   border-left: 0;
 }
 .sidebar__link {
@@ -39,11 +38,17 @@
 .accordion-menu {
   position: relative;
   overflow-y: scroll;
-  height: 400px;
+  height: 500px;
   //   scroll-snap-type: y mandatory;
 }
 ::-webkit-scrollbar {
-  width: 0px;
+  width: 5px;
+  background: #f2f2f2;
+}
+::-webkit-scrollbar-thumb{
+  width: 4px;
+  background: rgb(85, 85, 85);
+  border-radius: 5px;
 }
 .side_bar {
   position: absolute;
