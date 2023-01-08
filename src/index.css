@@ -7,7 +7,13 @@
 body{
   font-size: 16px;
 }
-
+::selection{
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 .container{
   max-width: 1320px;
   width: 100%;
