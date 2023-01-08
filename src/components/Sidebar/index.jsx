@@ -6,6 +6,9 @@ import "./style.scss";
 import Accord from "./../../UI/Accordion/index";
 
 const index = () => {
+
+
+  
   return (
     <>
       <div className="sidebar card d-flex justify-between py-4 flex-column ">
