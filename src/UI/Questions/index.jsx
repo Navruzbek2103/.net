@@ -1,11 +1,14 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "./style.scss"
-import { NavLink, Link } from "react-router-dom";
-
+import { NavLink, Link, useNavigate } from "react-router-dom";
 
 let a = 0;
 const index = ({item}) => {
-  // console.log(a+=1);
+
+  const count = useNavigate();
+  useEffect(() => {
+    a = 0
+  }, [count])
 
   return (
     <li className="interview__item">
