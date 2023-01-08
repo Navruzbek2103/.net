@@ -226,7 +226,7 @@ const index = () => {
           </Link>
           <ul className="nav__list">
             <li className="nav__item">
-              <NavLink to="/" className="nav__item-link p-1">
+              <NavLink to="/explore" className="nav__item-link p-1">
                 Explore
               </NavLink>
             </li>
@@ -240,11 +240,7 @@ const index = () => {
                 Interview
               </NavLink>
             </li>
-            <li className="nav__item">
-              <NavLink to="/test" className="nav__item-link p-2">
-                Test
-              </NavLink>
-            </li>
+            
           </ul>
           <div className="btnGroup">
             <Button variant="secondary" onClick={handleShow}>
