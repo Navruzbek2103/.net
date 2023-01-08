@@ -2,6 +2,7 @@ import React from "react";
 // import { BsPeopleFill } from "react-icons/bs";
 import Logo from "./../../assets/images/site-logo.jpg";
 import { IoLogoGameControllerB } from "react-icons/io";
+import { NavLink, Link } from "react-router-dom";
 import "./style.scss";
 import Accord from "./../../UI/Accordion/index";
 
@@ -23,7 +24,9 @@ const index = () => {
           </div>
         </div>
         <div className="mt-5">
-          <h5 className="doc__title">.NetDev Uzbekistan</h5>
+          <NavLink to="/doc/netdev" className={"text-black"}>
+            <h5 className="doc__title">.NetDev Uzbekistan</h5>
+          </NavLink>
         </div>
         <div className="w-100 d-flex flex-column accordion-menu">
           <Accord />

@@ -3,7 +3,9 @@ import React from 'react';
 const index = () => {
     return (
         <>
-         <h2>lesson-1</h2>   
+        <h2>
+            Database Sql Darslari
+        </h2>
         </>
     );
 };

@@ -10,7 +10,12 @@ import Algorithms from "./pages/Algorithms";
 import Database from "./pages/Database";
 import CSharp from "./pages/CSharp";
 import DotNet from "./pages/DotNet";
-
+import Net from "./pages/Lesson"
+import Netdev from "./pages/Netdev"
+import Javascript from "./pages/Javascript"
+import Data from "./pages/Data"
+import Pro from "./pages/Project"
+import Comment from "./pages/Comment"
 
 const App = () => {
   return (
@@ -18,8 +23,15 @@ const App = () => {
       <Header />
       <Routes>
         <Route path="/explore" element={<Main />} />
-        <Route path="/doc" element={<Doc />} />
-        <Route path="/int" element={<Int />} >
+        <Route path="/doc" element={<Doc />}>
+          <Route path="/doc/netdev" element={<Netdev/>}/>
+          <Route path="/doc/net" element={<Net/>}/>
+          <Route path="/doc/js" element={<Javascript/>}/>
+          <Route path="/doc/data" element={<Data/>}/>
+          <Route path="/doc/pro" element={<Pro/>}/>
+          <Route path="/doc/comment" element={<Comment/>}/>
+        </Route>
+        <Route path="/int" element={<Int />}>
           <Route index path="/int/allTopics" element={<AllTopics />} />
           <Route index path="/int/algorithms" element={<Algorithms />} />
           <Route index path="/int/database" element={<Database />} />
