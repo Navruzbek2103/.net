@@ -2,13 +2,14 @@
   position: fixed;
   // left: 0;
   top: 53px;
-  z-index: 55;
+  z-index: 50;
   border-radius: 0px !important;
   min-height: 100vh;
   width: 300px;
   gap: 10px;
   justify-content: flex-start;
   border-left: 0;
+  transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .sidebar__link {
   padding: 0 10px;
@@ -45,7 +46,7 @@
   width: 5px;
   background: #f2f2f2;
 }
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   width: 4px;
   background: rgb(85, 85, 85);
   border-radius: 5px;
@@ -73,7 +74,7 @@
 }
 
 .doc__title {
-  margin-top: 20px!important;
+  margin-top: 20px !important;
   padding: 10px;
   font-size: 21px;
   line-height: 22px;
@@ -86,4 +87,44 @@
 .active {
   background: #9fa3a7;
   border-radius: 5px;
+}
+.add__page {
+  background: #e3e8ed;
+}
+.plus {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+}
+.open {
+  transform: translateX(0) !important;
+}
+.btn-warning {
+  top: 0px;
+  left: 300px;
+  border-radius:50%;
+  display: none;
+  z-index: 56;
+}
+
+@media screen and (max-width: 1115px) {
+  .sidebar {
+    transform: translateX(-108%);
+  }
+  .btn-warning{
+    display: block;
+  }
+}
+@media screen and (max-width: 420px) {
+  .sidebar{
+    width: 80%;
+  }
+  .btn-warning{
+    left: 335px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .btn-warning{
+    left: 270px;
+  }
 }

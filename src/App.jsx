@@ -22,7 +22,7 @@ const App = () => {
     <>
       <Header />
       <Routes>
-        <Route path="/explore" element={<Main />} />
+        <Route path="/" element={<Main />} />
         <Route path="/doc" element={<Doc />}>
           <Route index  element={<Netdev/>}/>
           <Route path="/doc/net" element={<Net/>}/>

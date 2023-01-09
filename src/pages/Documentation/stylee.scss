@@ -2,7 +2,7 @@
   margin-top: 100px;
 }
 .document__right {
-  margin-left: 400px;
+  margin-left:350px;
 }
 .net__title {
   position: relative;
@@ -52,4 +52,8 @@
   align-items: center;
   gap: 20px;
   cursor: pointer;
+}
+
+@media screen and (max-width:1115px) {
+
 }

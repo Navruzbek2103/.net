@@ -1,7 +1,7 @@
 import React from "react";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import Img from "./../../assets/images/img.jpg";
-
+import "./style.scss"
 import { useState } from "react";
 
 const index = () => {
@@ -43,14 +43,14 @@ const index = () => {
       </div>
       <div className="doc_read">
         <h3 className="fw-bold doc-caption">Nega Taffakkur qilmaymiz?</h3>
-        <p className="text-secondary my-4">
+        <p className="text-secondary  my-4">
           Assalomu aleykum qadrli dasturchilar! Bilaszmi men o'z tajribam
           davomida shuni o'rgandimki, tafakkur degan tushunchaning o'rni
           dasturlashda ham juda katta ekan. Bu narsaning dasturchiga kerakli
           ekanini isbotlarini ham keltirishim mumkin. "Dasturlashda tafakkur"
           jumlasini nega ishlatdim? Bu o'z ichiga nimalarni oladi?
         </p>
-        <img src={Img} alt="" />
+        <img src={Img} alt="" width={700} />
       </div>
       <div className="text-secondary my-4">
         Ko'p dasturchilarni bilaman Dasturlashdan boshqa narsani bilmedi!!!
@@ -79,7 +79,7 @@ const index = () => {
         o'z kompyuterini jahl ustida bir urdi... Shunday urdi keyboard
         (klaviatura) ga, shunday urdi.... bir nechta klavishlar ishlame qoldi.
       </div>
-      <div className="my-4 text-secondary">
+      <div className="my-4 text-secondary mb-5 pb-5">
         Bizning hikoya Abdukarim Mirzayevnikiga o'xshagan zo'r emasda... Lekin
         hissasi zo'r. Agarda bizning dasturchi kompyuterni RAM i qanday
         ishlashini bilganida edi. Anavi kompyuterni dardini tushungan bo'lar

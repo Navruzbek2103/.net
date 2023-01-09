@@ -1,0 +1,48 @@
+@media screen and (max-width:1115px){
+    .document__right{
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-left: 0;
+    }
+    .doc_read{
+        margin: 0 auto;
+        img{
+        width: 100%;
+    }
+}
+}
+
+@media screen and (max-width: 895px) {
+    .net__title{
+        font-size: 30px;
+    }
+    .doc__text{
+        font-size: 15px;
+    }
+    .doc-caption{
+        font-size: 15px;
+    }
+    .doc_read{
+        p{
+            font-size: 14px;
+        }
+    }
+}
+@media screen and (max-width: 460px) {
+    .net__title{
+        font-size: 28px;
+    }
+    .doc__text{
+        font-size: 13px;
+    }
+    .doc-caption{
+        font-size: 13px;
+    }
+    .doc_read{
+        p{
+            font-size: 12px;
+        }
+    }
+}

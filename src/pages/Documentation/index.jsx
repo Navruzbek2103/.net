@@ -21,9 +21,9 @@ const index = () => {
       <div className="documentation">
         <div className="container">
           <div className="document">
-            <Sidebar />
-            <div className="document__right col-8">
-              <Outlet/>
+            <Sidebar/>
+            <div className="document__right col-8 me-4">
+              <Outlet />
             </div>
           </div>
         </div>

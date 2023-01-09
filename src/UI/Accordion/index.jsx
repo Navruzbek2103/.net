@@ -4,6 +4,7 @@ import ArrowForwardIosSharpIcon from "@mui/icons-material/ArrowForwardIosSharp";
 import MuiAccordion from "@mui/material/Accordion";
 import MuiAccordionSummary from "@mui/material/AccordionSummary";
 import MuiAccordionDetails from "@mui/material/AccordionDetails";
+import LibraryAddIcon from "@mui/icons-material/LibraryAdd";
 import Typography from "@mui/material/Typography";
 import { NavLink, Link } from "react-router-dom";
 import { useState } from "react";
@@ -144,6 +145,12 @@ export default function CustomizedAccordions() {
           </NavLink>
         </AccordionDetails>
       </Accordion>
+      <div className="add__page d-flex align-items-center justify-content-start w-100 rounded-1 p-2">
+        <LibraryAddIcon className="plus" />
+        <Link>
+          <h3 className="text-black fs-5 fw-normal mx-3">Bo'lim Qo'shish</h3>
+        </Link>
+      </div>
     </div>
   );
 }
