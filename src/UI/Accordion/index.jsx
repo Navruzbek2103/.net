@@ -50,98 +50,100 @@ export default function CustomizedAccordions() {
   const handleChange = (panel) => (event, newExpanded) => {
     setExpanded(newExpanded ? panel : false);
   };
-const [active , setActive] = useState("")
+  const [active, setActive] = useState("");
   return (
     <div>
-      <NavLink to="/doc/net">
-        <Accordion
-          expanded={expanded === "panel1"}
-          onChange={handleChange("panel1")}
-        >
-          <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
-            <Typography variant="h6">C# .NET</Typography>
-          </AccordionSummary>
-          <AccordionDetails>
+      <Accordion
+        expanded={expanded === "panel1"}
+        onChange={handleChange("panel1")}
+      >
+        <AccordionSummary aria-controls="panel1d-content" id="panel1d-header">
+          <Typography variant="h6">C# .NET</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <NavLink to="/doc/net">
             <Typography>.Netga hush kelibsiz</Typography>
-          </AccordionDetails>
-          <AccordionDetails>
-            <Typography>.Net bilan bog'liq Muaomo</Typography>
-          </AccordionDetails>
-          <AccordionDetails>
-            <Typography>.Net asoslari</Typography>
-          </AccordionDetails>
-          <AccordionDetails>
-            <Typography>Basics</Typography>
-          </AccordionDetails>
-          <AccordionDetails>
-            <Typography>LINQ asoslari</Typography>
-          </AccordionDetails>
-        </Accordion>
-      </NavLink>
-      <NavLink to="/doc/data">
-        <Accordion
-          expanded={expanded === "panel2"}
-          onChange={handleChange("panel2")}
-        >
-          <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
-            <Typography variant="h6">Database</Typography>
-          </AccordionSummary>
-          <AccordionDetails>
+          </NavLink>
+        </AccordionDetails>
+        <AccordionDetails>
+          <Typography>.Net bilan bog'liq Muaomo</Typography>
+        </AccordionDetails>
+        <AccordionDetails>
+          <Typography>.Net asoslari</Typography>
+        </AccordionDetails>
+        <AccordionDetails>
+          <Typography>Basics</Typography>
+        </AccordionDetails>
+        <AccordionDetails>
+          <Typography>LINQ asoslari</Typography>
+        </AccordionDetails>
+      </Accordion>
+      <Accordion
+        expanded={expanded === "panel2"}
+        onChange={handleChange("panel2")}
+      >
+        <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
+          <Typography variant="h6">Database</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <NavLink to="/doc/data">
             <Typography>MS SQL server</Typography>
-          </AccordionDetails>
-          <AccordionDetails>
-            <Typography>PostgreSQL</Typography>
-          </AccordionDetails>
-        </Accordion>
-      </NavLink>
-      <NavLink to="/doc/js">
-        <Accordion
-          expanded={expanded === "panel3"}
-          onChange={handleChange("panel3")}
-        >
-          <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
-            <Typography variant="h6">JavaScript</Typography>
-          </AccordionSummary>
-          <AccordionDetails>
+          </NavLink>
+        </AccordionDetails>
+        <AccordionDetails>
+          <Typography>PostgreSQL</Typography>
+        </AccordionDetails>
+      </Accordion>
+      <Accordion
+        expanded={expanded === "panel3"}
+        onChange={handleChange("panel3")}
+      >
+        <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
+          <Typography variant="h6">JavaScript</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <NavLink to="/doc/js">
             <Typography>JavaScript</Typography>
-          </AccordionDetails>
-          <AccordionDetails>
-            <Typography>React js</Typography>
-          </AccordionDetails>
-          <AccordionDetails>
-            <Typography>Vue js</Typography>
-          </AccordionDetails>
-        </Accordion>
-      </NavLink>
-      <NavLink to="/doc/pro" onClick={()=> setActive((e)=> !e)} className={`${active ? "bg-black" : ""}`}>
-        <Accordion
-          expanded={expanded === "panel4"}
-          onChange={handleChange("panel4")}
-        >
-          <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
-            <Typography variant="h6">Loyihalar</Typography>
-          </AccordionSummary>
-          <AccordionDetails>
+          </NavLink>
+        </AccordionDetails>
+        <AccordionDetails>
+          <Typography>React js</Typography>
+        </AccordionDetails>
+        <AccordionDetails>
+          <Typography>Vue js</Typography>
+        </AccordionDetails>
+      </Accordion>
+      <Accordion
+        expanded={expanded === "panel4"}
+        onChange={handleChange("panel4")}
+      >
+        <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
+          <Typography variant="h6">Loyihalar</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <NavLink to="/doc/pro" onClick={() => setActive((e) => !e)}>
             <Typography>Telegram bot</Typography>
-          </AccordionDetails>
-          <AccordionDetails>
-            <Typography>Crm Platform</Typography>
-          </AccordionDetails>
-        </Accordion>
-      </NavLink>
-      <NavLink to="/doc/comment">
+          </NavLink>
+        </AccordionDetails>
+        <AccordionDetails>
+          <Typography>Crm Platform</Typography>
+        </AccordionDetails>
+      </Accordion>
       <Accordion
         expanded={expanded === "panel5"}
         onChange={handleChange("panel5")}
-        >
+      >
         <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
           <Typography variant="h6">Fikr va mulohazalar</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography variant="subtitle2">FAANG gacha bo'lgan yo'l</Typography>
+          <NavLink to="/doc/comment">
+            <Typography variant="subtitle2">
+              FAANG gacha bo'lgan yo'l
+            </Typography>
+          </NavLink>
         </AccordionDetails>
       </Accordion>
-        </NavLink>
     </div>
   );
 }
