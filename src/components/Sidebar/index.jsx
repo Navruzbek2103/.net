@@ -13,13 +13,17 @@ const index = () => {
 
   return (
     <>
-      <div className={`sidebar card d-flex justify-between py-4 flex-column${open ? " open" : ""}`}>
-      <button
-        onClick={() => setOpen((e) => !e)}
-        className="btn btn-warning position-fixed"
+      <div
+        className={`sidebar card d-flex justify-between py-4 flex-column${
+          open ? " open" : ""
+        }`}
       >
-        M
-      </button>
+        <button
+          onClick={() => setOpen((e) => !e)}
+          className="btn btn-warning position-fixed"
+        >
+          M
+        </button>
         <div className="side_bar">
           <div className="sidebar-top w-100">
             <h2
@@ -28,7 +32,7 @@ const index = () => {
             >
               {/* <BsPeopleFill className="img" /> */}
               <img src={Logo} alt="site logo" className="img" />
-              <h1 className="logo">.NetDev</h1>
+              <p className="logo">.NetDev</p>
             </h2>
           </div>
         </div>

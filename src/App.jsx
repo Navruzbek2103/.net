@@ -21,8 +21,8 @@ import Loader from "./../src/layout/Layout";
 const App = () => {
   return (
     <>
-      <Header />
       <Loader />
+      <Header />
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/doc" element={<Doc />}>

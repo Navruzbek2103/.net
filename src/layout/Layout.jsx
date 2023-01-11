@@ -4,9 +4,12 @@ import "./style.scss";
 const Layout = () => {
   const [load, setLoad] = useState(false);
 
-  window.addEventListener("load", () => {
-    setLoad(true);
-  });
+  const loader = () => {
+    window.addEventListener("load", () => {
+      setLoad(true);
+    });
+  };
+  loader();
   return (
     <div
       className={`layout d-flex position-fixed top-0 bottom-0 mx-auto z-index ${
