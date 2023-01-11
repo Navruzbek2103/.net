@@ -1,38 +1,45 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   font-size: 16px;
 }
-::selection{
+::selection {
   -webkit-user-select: none;
   -webkit-touch-callout: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
-.container{
+.container {
   max-width: 1320px;
   width: 100%;
   padding: 0 20px;
   margin: 0 auto;
 }
 
-img{
+img {
   vertical-align: middle;
 }
 
-ul, ol{
+ul,
+ol {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-h1, h2, h3, h4, h5, h6, p{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
 }
-a{
+a {
   text-decoration: none;
 }
