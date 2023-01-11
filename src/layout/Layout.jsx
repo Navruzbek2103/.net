@@ -2,18 +2,18 @@ import React, { useState } from "react";
 import "./style.scss";
 
 const Layout = () => {
-  const [load, setLoad] = useState(true);
+  const [load, setLoad] = useState(false);
 
   window.addEventListener("load", () => {
-    setLoad(false);
+    setLoad(true);
   });
   return (
     <div
       className={`layout d-flex position-fixed top-0 bottom-0 mx-auto z-index ${
-        load ? "d-block" : " d-none"
+        load ? "d-none" : " d-block"
       }`}
     >
-      <span class="loader"></span>
+      <span className="loader"></span>
     </div>
   );
 };
