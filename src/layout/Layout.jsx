@@ -9,7 +9,7 @@ const Layout = () => {
       setLoad(true);
     });
   };
-  loader();
+  loader(setLoad)
   return (
     <div
       className={`layout d-flex position-fixed top-0 bottom-0 mx-auto z-index ${
