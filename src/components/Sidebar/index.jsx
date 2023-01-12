@@ -4,6 +4,7 @@ import Logo from "./../../assets/images/site-logo.jpg";
 import { IoLogoGameControllerB } from "react-icons/io";
 import { BsPlusCircleFill } from "react-icons/bs";
 import { NavLink, Link } from "react-router-dom";
+import MenuIcon from "@mui/icons-material/Menu";
 import "./style.scss";
 import Accord from "./../../UI/Accordion/index";
 import { useState } from "react";
@@ -22,7 +23,7 @@ const index = () => {
           onClick={() => setOpen((e) => !e)}
           className="btn btn-warning position-fixed"
         >
-          M
+          <MenuIcon />
         </button>
         <div className="side_bar">
           <div className="sidebar-top w-100">

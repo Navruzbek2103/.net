@@ -102,6 +102,7 @@
 .btn-warning {
   top: 0px;
   left: 300px;
+  padding: 10px;
   border-radius:50%;
   display: none;
   z-index: 56;
@@ -120,7 +121,7 @@
     width: 80%;
   }
   .btn-warning{
-    left: 335px;
+    left: 310px;
   }
 }
 @media screen and (max-width: 350px) {

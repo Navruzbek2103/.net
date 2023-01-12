@@ -3,13 +3,14 @@ import "./style.scss";
 import { NavLink, Link } from "react-router-dom";
 import SiteLogo from "./../../assets/images/site-logo.jpg";
 // import React, { useState } from 'react';
-import LibraryAddIcon from "@mui/icons-material/LibraryAdd";
+import ExploreIcon from '@mui/icons-material/Explore';
+import ArticleIcon from '@mui/icons-material/Article';
+import InterestsIcon from '@mui/icons-material/Interests';
 import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
 import Intro from "./../../components/Main/Intro";
-
 const index = () => {
   const [show, setShow] = useState(false);
 
@@ -122,19 +123,19 @@ const index = () => {
           <ul className="nav__list">
             <li className="nav__item">
               <NavLink to="/" className="nav__item-link p-2">
-                <LibraryAddIcon className="mobile_menu"  />
+                <ExploreIcon className="mobile_menu" />
                 Explore
               </NavLink>
             </li>
             <li className="nav__item">
               <NavLink to="/doc" className="nav__item-link p-2">
-                <LibraryAddIcon className="mobile_menu" />
+                <ArticleIcon className="mobile_menu" />
                 Documentation
               </NavLink>
             </li>
             <li className="nav__item">
               <NavLink to="/int" className="nav__item-link p-2">
-                <LibraryAddIcon className="mobile_menu" />
+                <InterestsIcon className="mobile_menu" />
                 Interview
               </NavLink>
             </li>

@@ -52,3 +52,15 @@
     //   list-style: decimal;
     // }
   }
+@media screen and (max-width:720px ) {
+  .interview__category-list{
+    padding: 20px 40px;
+    overflow-x: scroll;
+  }
+  ::-webkit-scrollbar{
+    height: 0px;
+  }
+  .interview__category-item-link:first-child{
+    width: 160px;
+  }
+}
